@@ -36,38 +36,28 @@ const Profile = () => {
           {firstName} {maidenName} {lastName}
         </h1>
         <img className="w-60 h-60 rounded-full self-center p-2" src={image} />
-        <div className=" gap-4">
+        <div className="justify-start">
           <h1>Personal Info :</h1>
-          <div>
-            <h1>
-              Age : {age} Gender : {gender}
-            </h1>
-            <h1>
-              Weight : {weight} Height : {height} Blood Group : {bloodGroup}
-            </h1>
-          </div>
-        </div>
-        <div>
-          <h1>Company Profile</h1>
-          <div>
-            <h1>
-              Name : {company.name} Post : {company.title}{" "}
-            </h1>
-            <h1>
-              Address : {company.address.address} {company.address.city}{" "}
-              {company.address.state}
-            </h1>
-          </div>
-        </div>
-        <div>
+          <h1>
+            Age : {age} Gender : {gender}
+          </h1>
+          <h1>
+            Weight : {weight} Height : {height} Blood Group : {bloodGroup}
+          </h1>
+          <h1>
+            Address : {company.address.address} {company.address.city}{" "}
+            {company.address.state}
+          </h1>
           <h1 className="text-left">Mobile : {phone}</h1>
           <h1 className="text-left">
             Address : {address.address} {address.city} {address.state}{" "}
             {address.postalCode}
           </h1>
-
           <h1 className="text-left">College : {university}</h1>
-          <h1></h1>
+          <h1>Company Profile</h1>
+          <h1>
+            Name : {company.name} Post : {company.title}{" "}
+          </h1>
         </div>
       </div>
     </div>

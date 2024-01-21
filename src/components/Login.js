@@ -1,6 +1,7 @@
 import { useState } from "react";
-import Profile from "./Profile";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
+
+//pass hbingley1 CQutx25i8r
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -28,7 +29,7 @@ const Login = () => {
   console.log(user);
   return (
     <div className="w-[100vw] h-[100vh] flex flex-col items-center justify-center">
-      {user && <Profile />}
+      {user && <Navigate to={"/profile"}></Navigate>}
       <div className="flex  flex-col shadow-xl p-12 gap-1">
         <p className="text-left text-xs text-gray-600">Welcome back! 👋</p>
         <h1 className="font-bold">Sign in to your account</h1>
